@@ -1,0 +1,11 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    ports:
+      - 3002:3000
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    container_name: "restAPIdemo-nuxt"
