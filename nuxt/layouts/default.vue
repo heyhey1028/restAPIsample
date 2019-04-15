@@ -32,12 +32,6 @@
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn
         icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
         @click.stop="clipped = !clipped"
       >
         <v-icon>web</v-icon>
@@ -108,7 +102,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'RestAPI demo App'
     }
   }
 }
